@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial App Landing</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css">
+    <link rel="stylesheet"
+        href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital@1&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.3.5/dist/alpine.min.js" defer></script>
+</head>
+
+<body class="bg-no-repeat bg-cover bg-center" style="background-image: url(images/App\ Landing\ Page.png);">
+    <nav class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-4 py-3 md:px-16 lg:px-32">
+        <div class="flex items-center flex-shrink-0 text-black mr-6">
+            <span class="font-semibold flex flex-row items-center text-xl tracking-tight">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-500" viewBox="0 0 20 20"
+                    fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z"
+                        clip-rule="evenodd" />
+                </svg>
+                uifry
+            </span>
+        </div>
+        <button class="lg:hidden text-black p-2" id="mobile-menu-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+        <div class="lg:flex flex-grow items-center bg-white lg:bg-opacity-0 lg:shadow-none hidden w-full lg:w-auto"
+            id="mobile-menu">
+            <div class="text-md font-bold flex flex-col lg:flex-row items-center text-black lg:flex-grow">
+                <a href="#"
+                    class="block mt-4 text-orange-500 lg:inline-block lg:mt-0 hover:text-black px-4 py-2 rounded mr-2">Home</a>
+                <a href="#"
+                    class="block mt-4 lg:inline-block lg:mt-0 hover:text-orange-100 px-4 py-2 rounded mr-2">About Us</a>
+                <a href="#"
+                    class="block mt-4 lg:inline-block lg:mt-0 hover:text-orange-500 px-4 py-2 rounded mr-2">Pricing</a>
+                <a href="#"
+                    class="block mt-4 lg:inline-block lg:mt-0 hover:text-orange-500 px-4 py-2 rounded mr-2">Features</a>
+            </div>
+            <a class="bg-black text-white active:bg-blueGray-50 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150 block lg:inline-block mt-4 lg:mt-0"
+                href="#">
+                <i class="fas fa-arrow-alt-circle-down"></i> Download
+            </a>
+        </div>
+    </nav>
+
+    <section class="mt-16 md:mt-24 lg:mt-32 dark:bg-gray-900">
+        <div
+            class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 grid grid-cols-1 lg:grid-cols-2 sm:py-16 lg:px-6">
+            <div class="mt-4 md:mt-0">
+                <h2
+                    class="mb-4 text-3xl md:text-4xl tracking-tight uppercase font-extrabold text-gray-900 dark:text-white">
+                    make the best <br> financial decisions
+                </h2>
+                <p class="mb-6 font-light text-gray-500 text-sm md:text-base lg:text-lg dark:text-gray-400">
+                    Cum et convallis risus placerat aliquam, nunc. Scelerisque aliquet faucibus tincidunt eu adipiscing
+                    sociis arcu lorem porttitor.
+                </p>
+                <div class="flex flex-row items-center">
+                    <a href="#"
+                        class="inline-flex items-center text-white bg-black hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg mr-5 text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900">
+                        Get started
+                        <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                    <a href="#"
+                        class="inline-flex items-center text-black hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900">
+                        <svg class="w-6 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path fill="#000000"
+                                d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c7.6-4.2 16.8-4.1 24.3 .5l144 88c7.1 4.4 11.5 12.1 11.5 20.5s-4.4 16.1-11.5 20.5l-144 88c-7.4 4.5-16.7 4.7-24.3 .5s-12.3-12.2-12.3-20.9V168c0-8.7 4.7-16.7 12.3-20.9z" />
+                        </svg>
+                        Watch Video
+                    </a>
+                </div>
+            </div>
+            <div class="relative w-96 md:mt-0">
+                <div
+                    class="absolute transform -translate-y-10 -rotate-6 z-10 scale-75 md:scale-100 w-32 md:w-48 lg:w-64">
+                    <img class="w-full ml-52 mt-56" src="images/iPhone-13-Pro-Front.png" alt="Phone 1">
+                </div>
+                <div class="absolute transform translate-y-5 z-20 scale-75 md:scale-100 w-32 md:w-48 lg:w-64">
+                    <img class="w-full ml-36 mt-40" src="images/iPhone-13-Pro-mid.png" alt="Phone 2">
+                </div>
+                <div class="absolute transform translate-y-20 rotate-6 z-30 scale-75 md:scale-100 w-32 md:w-48 lg:w-64">
+                    <img class="w-full" src="images/iPhone-13-Pro-back.png" alt="Phone 3">
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </section>
+
+    <img class="mx-auto md:ml-8 lg:ml-32" src="images/strip.png" alt="">
+
+    <section class="dark:bg-gray-900">
+        <div
+            class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 grid grid-cols-1 lg:grid-cols-2 sm:py-16 lg:px-6">
+            <img class="w-full max-w-xs mx-auto md:max-w-full md:mx-0 dark:hidden"
+                src="images/iphone-second-component.png" alt="dashboard image">
+
+            <div class="mt-4 md:mt-0">
+                <h6 class="text-orange-500 font-semibold uppercase tracking-widest">Features</h6>
+                <h2 class="mb-4 text-3xl md:text-4xl tracking-wide font-extrabold text-gray-900 dark:text-white">Uifry
+                    Premium</h2>
+                <h6 class="font-bold mt-10 flex flex-row"><img class="mr-2" src="images/budget-icon.png"
+                        alt="">Budgeting Intervals</h6>
+                <p class="mb-10 mt-3 font-light text-gray-500 text-sm md:text-base lg:text-lg dark:text-gray-400">Cum et
+                    convallis risus placerat aliquam, nunc. Scelerisque aliquet faucibus tincidunt eu adipiscing sociis
+                    arcu lorem porttitor.</p>
+                <!-- ... other features ... -->
+            </div>
+        </div>
+    </section>
+
+    <section class="ml-4 md:ml-12 lg:ml-24 dark:bg-gray-900">
+        <div
+            class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 grid grid-cols-1 lg:grid-cols-2 sm:py-16 lg:px-6">
+            <div class="mt-4 md:mt-0">
+                <h6 class="text-orange-500 font-semibold uppercase tracking-widest">Advantages</h6>
+                <h2 class="mb-4 text-3xl md:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Why
+                    Choose Uifry ?</h2>
+                <h6 class="font-bold flex flex-row items-center"><img class="w-9 mr-4"
+                        src="images/notification-icon.png" alt="">Clever Notification</h6>
+                <p class="mb-10 mt-3 font-light text-gray-500 text-sm md:text-base lg:text-lg dark:text-gray-400">Arcu
+                    at dictum sapien, mollis. Vulputate sit id accumsan, <br> ultricies. In ultrices malesuada elit
+                    mauris etiam odio.</p>
+            </div>
+
+            <img class="w-full max-w-xs mx-auto md:max-w-full md:mx-0 dark:hidden"
+                src="images/iphone-third-component.png" alt="dashboard image">
+        </div>
+    </section>
+
+
+
+    <div class="container mx-auto px-4 py-12">
+        <!-- Main CTA Section -->
+        <div class="bg-gradient bg-opacity-10 rounded-3xl p-6 md:p-12 mb-16 relative overflow-hidden">
+            <div class="absolute inset-0 bg-black opacity-90 z-0 rounded-3xl"></div>
+            <div class="relative z-10">
+                <h1 class="text-4xl md:text-5xl text-white font-extrabold mb-4">Ready To Get Started?</h1>
+                <p class="text-lg text-gray-300 mb-8">Risus Habitant Leo Egestas Mauris Diam Eget Morbi Tempus
+                    Vulputate.</p>
+                <button
+                    class="bg-white text-black px-6 py-3 rounded-full font-semibold flex items-center space-x-2 hover:bg-gray-200 transition-colors">
+                    <span>Download App</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="30" width="25" viewBox="0 0 384 512">
+                        <path fill="#000000"
+                            d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z" />
+                    </svg>
+                </button>
+            </div>
+            <div class="absolute right-0 bottom-0 transform translate-x-1/4 translate-y-1/4">
+                <img src="images/iphone-last-component.png" alt="App Screenshots" class="w-full max-w-lg">
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 p-4">
+            <!-- Logo and Contact -->
+            <div class="col-span-1">
+                <div class="flex items-center space-x-2 mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-500" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    <span class="text-3xl font-bold">uifry</span>
+                </div>
+                <p class="text-black md:w-64 font-medium mb-2"><i class="fa-solid fa-envelope ml-2 mr-4"
+                        style="color: #ff5555;"></i>Help@FryInc.Com</p>
+                <p class="text-black font-medium"><i class="fa-solid fa-phone ml-2 mr-4"
+                        style="color: #ff5555;"></i>+1234 456 678 99</p>
+            </div>
+
+            <!-- Links -->
+            <div class="col-span-1">
+                <h3 class="font-bold text-2xl md:text-3xl mb-4">Links</h3>
+                <ul class="text-black font-medium space-y-2">
+                    <li><a href="#" class="hover:text-orange-500">Home</a></li>
+                    <li><a href="#" class="hover:text-orange-500">About Us</a></li>
+                    <li><a href="#" class="hover:text-orange-500">Bookings</a></li>
+                    <li><a href="#" class="hover:text-orange-500">Blog</a></li>
+                </ul>
+            </div>
+
+            <!-- Legal -->
+            <div class="col-span-1">
+                <h3 class="font-bold text-2xl md:text-3xl mb-4">Legal</h3>
+                <ul class="text-black font-medium space-y-2">
+                    <li><a href="#" class="hover:text-orange-500">Terms Of Use</a></li>
+                    <li><a href="#" class="hover:text-orange-500">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-orange-500">Cookie Policy</a></li>
+                </ul>
+            </div>
+
+            <!-- Product -->
+            <div class="col-span-1">
+                <h3 class="font-bold text-2xl md:text-3xl mb-4">Product</h3>
+                <ul class="text-black font-medium space-y-2">
+                    <li><a href="#" class="hover:text-orange-500">Take Tour</a></li>
+                    <li><a href="#" class="hover:text-orange-500">Live Chat</a></li>
+                    <li><a href="#" class="hover:text-orange-500">Reviews</a></li>
+                </ul>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="col-span-1">
+                <h3 class="font-bold text-2xl md:text-3xl mb-4">Newsletter</h3>
+                <p class="text-black font-medium mb-4">Stay Up To Date</p>
+                <form class="flex flex-col sm:flex-row">
+                    <input type="email" placeholder="Your email"
+                        class="bg-white text-black px-4 py-2 rounded-l-md w-full outline-none mb-2 sm:mb-0">
+                    <button type="submit"
+                        class="bg-gray-900 text-white px-4 py-2 rounded-r-md hover:bg-gray-700">Subscribe</button>
+                </form>
+            </div>
+        </footer>
+
+        <!-- Copyright -->
+        <p class="text-center text-black mt-16">Copyright 2023 Uifry.Com All Rights Reserved</p>
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/e46c3fe067.js" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+            const mobileMenu = document.getElementById("mobile-menu");
+
+            mobileMenuBtn.addEventListener("click", function () {
+                mobileMenu.classList.toggle("hidden");
+            });
+        });
+    </script>
+</body>
+
+</html>
